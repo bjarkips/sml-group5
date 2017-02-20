@@ -1,0 +1,4 @@
+    user   system  elapsed 
+1235.368    0.140 1235.354 
+Training set: 0.9954167 
+Test set: 0.9949167 

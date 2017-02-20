@@ -1,0 +1,6 @@
+> system.time(replicate(10, knn(M_train, M_test, true_class_train, 1)))
+   user  system elapsed 
+ 39.792   0.040  39.824 
+> system.time(replicate(10, knn(M_train, M_test, true_class_train, 200)))
+   user  system elapsed 
+ 47.460   0.024  47.475 
