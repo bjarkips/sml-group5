@@ -1,0 +1,288 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+\usepackage{multicol}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{listings}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Syddansk Universitet} \\ [25pt] 
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge K-nearest neighbor \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Bjarki Páll \\ Abdulrahman Abdulrahim \\ Miguel de la Colina}
+ % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+
+\section*{Abstract}
+
+\paragraph{The purpose of this report is to use the k-nearest neighbor algorithm on a data-set made of ciphers we will be dividing the data in two sets one for training and one for testing and we will be analyzing the results with multiple k and DPI's to see how this alters our results. Also we will be applying the  Gaussian smoothing with various sigmas in order to see how does this alter the results.}  
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\section{K-nearest neighbor}
+\begin{flushleft}
+We will be using R which is a statistical language in order to test the k-nearest neighbor algorithm, firstly we will have to generate our data-sets which are taken from scanned ciphers and loaded through the function loadSinglePersonsData, once the data is loaded we shuffle the data with a seed for reproducible results with this done we split the data into test and train so that we are able to test the data after we have trained and be able to use different data from the one that was trained.
+\end{flushleft}
+
+\begin{flushleft}
+For this test we will be varying the number of k to see how the result actually varies when we begin to change it's value we will check how the speed and test recognition are affected by this change. This is to see how important really is to select the correct k and to see if having selected the wrong one could affect your results substantially.
+\end{flushleft}
+
+\begin{flushleft}
+We will also be doing cross validation of the results in order to see if the results of the trained model will fit for other hypothetical, set of data this will be done by running 10 times a 90\%/10\% split of the data-set.  
+\end{flushleft}
+\begin{lstlisting}
+    M_xval <- list()
+    for (i in 1:10) {
+      # Split matrix into 10 parts
+      M_xval[[i]] <- M_shuffled[((i-1)*nrow(M)/10+1):(i*nrow(M)/10),]
+    }
+    for (i in 1:10) {
+      # Recombine 9 parts for training and keep 1 for testing
+      M_xval_test <- M_xval[[i]]
+      M_xval_train <- do.call(rbind, M_xval[-i])
+      true_class_xval <- M_xval_train[,1]
+      class_xval = knn(M_xval_train, M_xval_test, true_class_xval, k_it)
+      true_class_xval <- factor(true_class_xval, levels(class_xval))
+      success_xval <- sum(true_class_xval == class_xval)/length(class_xval)
+      cat("Result", i, ":", success_xval, "\n")
+    }
+\end{lstlisting}
+
+\begin{flushleft}
+Finally after testing it with the smoothing implementation that was in the loadImage file we have to implement the smoothing using a different method. We used the Gaussian smoothing with various sigmas, for the implementation we used the R function gblur which receives as parameter the image and the sigma.   
+\end{flushleft}
+%------------------------------------------------
+
+\subsection{Example of list (3*itemize)}
+\begin{itemize}
+	\item First item in a list 
+		\begin{itemize}
+		\item First item in a list 
+			\begin{itemize}
+			\item First item in a list 
+			\item Second item in a list 
+			\end{itemize}
+		\item Second item in a list 
+		\end{itemize}
+	\item Second item in a list 
+\end{itemize}
+
+%------------------------------------------------
+
+\subsection{Example of list (enumerate)}
+\begin{enumerate}
+\item First item in a list 
+\item Second item in a list 
+\item Third item in a list
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\section*{Results}
+
+\subsection*{Results with DPI=100}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{DPI=100} \\
+ \hline
+ K & Training Set & Test Set & Time\\
+ \hline
+ 1 & 1 & 0.9995 & 3.853\\
+ 10 & 0.9945 & 0.9945 & 3.334\\
+ 25 & 0.991 & 0.986 & 3.386\\
+ 50 & 0.984 & 0.986 & 3.395\\
+ 100 & 0.9865 & 0.989 & 3.807\\
+ \hline
+\end{tabular}
+
+\subsection*{Results with DPI=200}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{DPI=200} \\
+ \hline
+ K & Training Set & Test Set & Time\\
+ \hline
+ 1 & 1 & 0.9995 & 3.419\\
+ 10 & 0.9945 & 0.9945 & 4.170\\
+ 25 & 0.991 & 0.986 & 3.393\\
+ 50 & 0.984 & 0.986 & 3.419\\
+ 100 & 0.9865 & 0.989 & 3.58\\
+ \hline
+\end{tabular}
+
+\subsection*{Results with DPI=300}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{DPI=300} \\
+ \hline
+ K & Training Set & Test Set & Time\\
+ \hline
+ 1 & 1 & 0.9995 & 5.011\\
+ 10 & 0.9945 & 0.9945 & 3.484\\
+ 25 & 0.991 & 0.9875 & 4.956\\
+ 50 & 0.984 & 0.986 & 3.779\\
+ 100 & 0.9865 & 0.989 & 4.087\\
+ \hline
+\end{tabular}
+
+\subsection*{Cross-validation k=50 DPI=100}
+\begin{center}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{DPI=100 k=50} \\
+ \hline
+ Number & Result\\
+ \hline
+ Result 1 & 0.8675 \\
+ Result 2 & 0.9225 \\
+ Result 3 & 0.8525 \\
+ Result 4 & 0.9525\\ 
+ Result 5 & 0.915 \\
+ Result 6 & 0.8275 \\
+ Result 7 & 0.82 \\
+ Result 8 & 0.7975 \\
+ Result 9 & 0.9525 \\
+ Result 10 & 0.8875\\
+ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Cross-validation k=50 DPI=200}
+\begin{center}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{DPI=100 k=50} \\
+ \hline
+ Number & Result\\
+ \hline
+ Result 1 & 0.8675 \\
+ Result 2 & 0.9225 \\
+ Result 3 & 0.8525 \\
+ Result 4 & 0.9525\\ 
+ Result 5 & 0.915 \\
+ Result 6 & 0.8275 \\
+ Result 7 & 0.82 \\
+ Result 8 & 0.7975 \\
+ Result 9 & 0.9525 \\
+ Result 10 & 0.8875\\
+ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Cross-validation k=50 DPI=300}
+\begin{center}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{DPI=100 k=50} \\
+ \hline
+ Number & Result\\
+ \hline
+ Result 1 & 0.8675 \\
+ Result 2 & 0.9225 \\
+ Result 3 & 0.8525 \\
+ Result 4 & 0.9525\\ 
+ Result 5 & 0.915 \\
+ Result 6 & 0.8275 \\
+ Result 7 & 0.82 \\
+ Result 8 & 0.7975 \\
+ Result 9 & 0.9525 \\
+ Result 10 & 0.8875\\
+ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Results for Gaussian Smoothing}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{DPI=100} \\
+ \hline
+ sigma & Training Set & Test Set & Time\\
+ \hline
+ .1 & 0.6405 & 0.6235 & 66.464\\
+ .5 & 0.7235 & 0.702 & 66.900\\
+ 1 & 0.8215 & 0.828 & 66.404\\
+ 2 & 0.932 & 0.941 & 66.231\\
+ 5 & 0.9895 & 0.9915 & 67.592\\
+ 10 & 0.9985 & 1 & 66.365\\
+ \hline
+\end{tabular}
+
+\begin{multicols}{2}
+\begin{itemize}
+
+\item Loading data using sigma = 2 \\
+   user || system || elapsed \\
+ 66.184 ||  0.052 || 66.231 \\
+Training set: 0.932 \\
+Test set: 0.941 
+
+\item Loading data using sigma = 5 \\
+   user || system || elapsed \\
+ 67.584 ||  0.020 || 67.592 \\
+Training set: 0.9895 \\
+Test set: 0.9915 
+
+\item Loading data using sigma = 10 \\
+   user || system || elapsed \\
+ 66.364 ||  0.016 || 66.365 \\
+Training set: 0.9985 \\
+Test set: 1 
+ 
+\end{itemize}
+\end{multicols}
+
+
+%--------------------------------------------------
+
+\end{document}
