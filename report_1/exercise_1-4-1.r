@@ -1,6 +1,8 @@
-# Solution to exercise 1.4.1
+# Solution to exercises 1.4.1-1.4.3
 # Created 17.02.2017
-#----------------------------
+#----------------------------------
+
+source('~/SML/trunk/Basefolder/loadImage.R')
 
 # Iterate through values for k and DPI
 DPI <- c(100, 200, 300)
@@ -43,5 +45,23 @@ for (DPI_it in DPI) {
     cat("Training set:", success_train, "\n")
     success_test <- sum(true_class_test == class_test)/length(class_test)
     cat("Test set:", success_test, "\n\n")
+  }
+  
+  # Perform cross-validation
+  cat("Performing cross-validation for k = 50 and DPI =", DPI_it, "\n")
+  M_xval <- list()
+  for (i in 1:10) {
+    # Split matrix into 10 parts
+    M_xval[[i]] <- M_shuffled[((i-1)*nrow(M)/10+1):(i*nrow(M)/10),]
+  }
+  for (i in 1:10) {
+    # Recombine 9 parts for training and keep 1 for testing
+    M_xval_test <- M_xval[[i]]
+    M_xval_train <- do.call(rbind, M_xval[-i])
+    true_class_xval <- M_xval_train[,1]
+    class_xval = knn(M_xval_train, M_xval_test, true_class_xval, k_it)
+    true_class_xval <- factor(true_class_xval, levels(class_xval))
+    success_xval <- sum(true_class_xval == class_xval)/length(class_xval)
+    cat("Result", i, ":", success_xval, "\n")
   }
 }

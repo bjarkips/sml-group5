@@ -1,0 +1,123 @@
+k = 1 , DPI = 100 
+   user  system elapsed 
+  3.848   0.004   3.853 
+Training set: 1 
+Test set: 0.9995 
+
+k = 10 , DPI = 100 
+   user  system elapsed 
+  3.332   0.000   3.334 
+Training set: 0.9945 
+Test set: 0.9945 
+
+k = 25 , DPI = 100 
+   user  system elapsed 
+  3.388   0.000   3.386 
+Training set: 0.991 
+Test set: 0.9875 
+
+k = 50 , DPI = 100 
+   user  system elapsed 
+  3.396   0.000   3.395 
+Training set: 0.984 
+Test set: 0.986 
+
+k = 100 , DPI = 100 
+   user  system elapsed 
+  3.808   0.000   3.807 
+Training set: 0.9865 
+Test set: 0.989 
+
+Performing cross-validation for k = 50 and DPI = 100 
+Result 1 : 0.8675 
+Result 2 : 0.9225 
+Result 3 : 0.8525 
+Result 4 : 0.9525 
+Result 5 : 0.915 
+Result 6 : 0.8275 
+Result 7 : 0.82 
+Result 8 : 0.7975 
+Result 9 : 0.9525 
+Result 10 : 0.8875 
+k = 1 , DPI = 200 
+   user  system elapsed 
+  3.420   0.000   3.419 
+Training set: 1 
+Test set: 0.9995 
+
+k = 10 , DPI = 200 
+   user  system elapsed 
+  4.172   0.000   4.170 
+Training set: 0.9945 
+Test set: 0.9945 
+
+k = 25 , DPI = 200 
+   user  system elapsed 
+  3.396   0.000   3.393 
+Training set: 0.991 
+Test set: 0.9875 
+
+k = 50 , DPI = 200 
+   user  system elapsed 
+  3.416   0.004   3.419 
+Training set: 0.984 
+Test set: 0.986 
+
+k = 100 , DPI = 200 
+   user  system elapsed 
+   3.58    0.00    3.58 
+Training set: 0.9865 
+Test set: 0.989 
+
+Performing cross-validation for k = 50 and DPI = 200 
+Result 1 : 0.8675 
+Result 2 : 0.9225 
+Result 3 : 0.8525 
+Result 4 : 0.9525 
+Result 5 : 0.915 
+Result 6 : 0.8275 
+Result 7 : 0.82 
+Result 8 : 0.7975 
+Result 9 : 0.9525 
+Result 10 : 0.8875 
+k = 1 , DPI = 300 
+   user  system elapsed 
+  5.012   0.000   5.011 
+Training set: 1 
+Test set: 0.9995 
+
+k = 10 , DPI = 300 
+   user  system elapsed 
+  3.484   0.000   3.484 
+Training set: 0.9945 
+Test set: 0.9945 
+
+k = 25 , DPI = 300 
+   user  system elapsed 
+  4.956   0.000   4.956 
+Training set: 0.991 
+Test set: 0.9875 
+
+k = 50 , DPI = 300 
+   user  system elapsed 
+  3.780   0.000   3.779 
+Training set: 0.984 
+Test set: 0.986 
+
+k = 100 , DPI = 300 
+   user  system elapsed 
+  4.088   0.000   4.087 
+Training set: 0.9865 
+Test set: 0.989 
+
+Performing cross-validation for k = 50 and DPI = 300 
+Result 1 : 0.8675 
+Result 2 : 0.9225 
+Result 3 : 0.8525 
+Result 4 : 0.9525 
+Result 5 : 0.915 
+Result 6 : 0.8275 
+Result 7 : 0.82 
+Result 8 : 0.7975 
+Result 9 : 0.9525 
+Result 10 : 0.8875 
