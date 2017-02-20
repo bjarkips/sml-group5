@@ -60,7 +60,7 @@
 
 \section*{Abstract}
 
-\paragraph{The purpose of this report is to use the k-nearest neighbor algorithm on a data-set made of ciphers we will be dividing the data in two sets one for training and one for testing and we will be analyzing the results with multiple k and DPI's to see how this alters our results. Also we will be applying the  Gaussian smoothing with various sigmas in order to see how does this alter the results.}  
+\paragraph{The purpose of this report is to use the k-nearest neighbor algorithm on a data-set made of ciphers. We will be dividing the data into two sets, one for training and one for testing. We will analyze the results for different values of k and DPI to see how this alters our results. Also we will be applying the  Gaussian smoothing with various sigmas in order to see how does this alter the results.}  
 
 %------------------------------------------------
 
@@ -71,7 +71,7 @@
 
 \section{K-nearest neighbor}
 \begin{flushleft}
-We will be using R which is a statistical language in order to test the k-nearest neighbor algorithm, firstly we will have to generate our data-sets which are taken from scanned ciphers and loaded through the function loadSinglePersonsData, once the data is loaded we shuffle the data with a seed for reproducible results with this done we split the data into test and train so that we are able to test the data after we have trained and be able to use different data from the one that was trained.
+We will be using R which is a statistical language in order to test the k-nearest neighbor algorithm, firstly we will have to generate our data-sets which are taken from scanned ciphers and loaded through the function \texttt{loadSinglePersonsData}, once the data is loaded we shuffle the data with a seed for reproducible results. With this done we split the data into test and train so that we are able to test the data after we have trained and be able to use different data from the one that was trained.
 \end{flushleft}
 
 \begin{flushleft}
@@ -79,7 +79,7 @@ For this test we will be varying the number of k to see how the result actually 
 \end{flushleft}
 
 \begin{flushleft}
-We will also be doing cross validation of the results in order to see if the results of the trained model will fit for other hypothetical, set of data this will be done by running 10 times a 90\%/10\% split of the data-set.  
+We will also be doing cross validation of the results in order to see if the results of the trained model will fit for other hypothetical, set of data this will be done by running 10 times a 90\%/10\% split of the data-set. The pseudocode for the cross-validation is shown below.
 \end{flushleft}
 \begin{lstlisting}
     M_xval <- list()
@@ -100,7 +100,7 @@ We will also be doing cross validation of the results in order to see if the res
 \end{lstlisting}
 
 \begin{flushleft}
-Finally after testing it with the smoothing implementation that was in the loadImage file we have to implement the smoothing using a different method. We used the Gaussian smoothing with various sigmas, for the implementation we used the R function gblur which receives as parameter the image and the sigma.   
+Finally after testing it with the smoothing implementation that was in \texttt{loadImage.r} we have to implement the smoothing using a different method. We used the Gaussian smoothing  with various sigmas, this is implemented in the EBImage package as \texttt{gblur()} which receives as parameter the image and the sigma.   
 \end{flushleft}
 %------------------------------------------------
 
@@ -114,7 +114,7 @@ Finally after testing it with the smoothing implementation that was in the loadI
  \hline
  \multicolumn{4}{|c|}{DPI=100} \\
  \hline
- K & Training Set & Test Set & Time\\
+ K & Training Set acc. & Test Set acc. & Time\\
  \hline
  1 & 1 & 0.9995 & 3.853\\
  10 & 0.9945 & 0.9945 & 3.334\\
@@ -129,7 +129,7 @@ Finally after testing it with the smoothing implementation that was in the loadI
  \hline
  \multicolumn{4}{|c|}{DPI=200} \\
  \hline
- K & Training Set & Test Set & Time\\
+ K & Training Set acc. & Test Set acc. & Time\\
  \hline
  1 & 1 & 0.9995 & 3.419\\
  10 & 0.9945 & 0.9945 & 4.170\\
@@ -144,7 +144,7 @@ Finally after testing it with the smoothing implementation that was in the loadI
  \hline
  \multicolumn{4}{|c|}{DPI=300} \\
  \hline
- K & Training Set & Test Set & Time\\
+ K & Training Set acc. & Test Set acc. & Time\\
  \hline
  1 & 1 & 0.9995 & 5.011\\
  10 & 0.9945 & 0.9945 & 3.484\\
@@ -154,10 +154,13 @@ Finally after testing it with the smoothing implementation that was in the loadI
  \hline
 \end{tabular}\\
 
-As we see the results we can see that in the change of DPI the training set and test set results do not vary that much between them but we can see a variation when the k is being altered with k= 1 being the best result for the training set and also for the test set. \\
+We see that the accuracy does vary with k. Notably, k=1 results in a perfect fit for the training set but this will often, in theory, result in overfitting of the data. Thus we use the rule of thumb of taking the square root of the sample size as the k and approximate it to k=50 for further testing.\\
 
-Something else we noticed was that the higher the DPI even if the results didn't change the time did increase we think because with more DPI it takes more time to process because there are more pixels to be taken into account.
+Though the timing measurements presented in the table are quite noisy, we see that the computation time seems to increase with DPI. This is logical as the number of pixels in the images has a square relationship to the DPI. Below we will present more accurate timing measurements and discuss their dependence on k.\\
 
+For more accurate timing measurements, we ran the \texttt{knn()} function repeatedly for k=1 and k=100 and compared the results. for DPI=300, we obtained mean computation times of 3.98s and 4.75s for k=1 and k=100, respectively. This is to be expected as for larger k, each point needs to be checked against more neighbours, resulting in more computations.\\
+
+We performed cross-validation on the data with our chosen k for varying DPI values. In general, we found the accuracy of the kNN algorithm to be independent on the image quality, at least for the DPI values tested. Thus only results for DPI=100 are shown below. We obtained a mean accuracy of 0.880 with a standard deviation of 0.056.\\
 \subsection*{Cross-validation k=50 DPI=100}
 \begin{center}
 \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
@@ -180,61 +183,9 @@ Something else we noticed was that the higher the DPI even if the results didn't
 \end{tabular}
 \end{center}
 \begin{center}
-mean: 0.8795\\
-standard deviation: 0.055450178\\
 \end{center}
 
-\subsection*{Cross-validation k=50 DPI=200}
-\begin{center}
-\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
- \hline
- \multicolumn{2}{|c|}{DPI=100 k=50} \\
- \hline
- Number & Result\\
- \hline
- Result 1 & 0.8675 \\
- Result 2 & 0.9225 \\
- Result 3 & 0.8525 \\
- Result 4 & 0.9525\\ 
- Result 5 & 0.915 \\
- Result 6 & 0.8275 \\
- Result 7 & 0.82 \\
- Result 8 & 0.7975 \\
- Result 9 & 0.9525 \\
- Result 10 & 0.8875\\
- \hline
-\end{tabular}
-\end{center}
-\begin{center}
-mean: 0.8795\\
-standard deviation: 0.055450178\\
-\end{center}
-
-\subsection*{Cross-validation k=50 DPI=300}
-\begin{center}
-\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
- \hline
- \multicolumn{2}{|c|}{DPI=100 k=50} \\
- \hline
- Number & Result\\
- \hline
- Result 1 & 0.8675 \\
- Result 2 & 0.9225 \\
- Result 3 & 0.8525 \\
- Result 4 & 0.9525\\ 
- Result 5 & 0.915 \\
- Result 6 & 0.8275 \\
- Result 7 & 0.82 \\
- Result 8 & 0.7975 \\
- Result 9 & 0.9525 \\
- Result 10 & 0.8875\\
- \hline
-\end{tabular}
-\end{center}
-\begin{center}
-mean: 0.8795\\
-standard deviation: 0.055450178\\
-\end{center}
+For our tests with image preprocessing we obtained the results shown below for different sigmas in the gaussian low-pass smoothing filter. We see that the smoothing seems to increase the accuracy of the algorithm to some degree.\\
 
 \subsection*{Results for Gaussian Smoothing}
 \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
@@ -247,10 +198,12 @@ standard deviation: 0.055450178\\
  .5 & 0.7235 & 0.702 & 66.900\\
  1 & 0.8215 & 0.828 & 66.404\\
  2 & 0.932 & 0.941 & 66.231\\
- 5 & 0.9895 & 0.9915 & 67.592\\
- 10 & 0.9985 & 1 & 66.365\\
  \hline
 \end{tabular}
+
+Finally we ran the first test on the entire data set. Cross-validation as well as accurate timing was not performed for this part due to a lack of computation power. This was also the reason we only tested with k=50. k=200 may have been more accurate as the data set was 18 times larger than in previous parts.\\
+
+We obtained accuracy results of 0.9954 on the training set and 0.9949 on the test set. We timed the execution time of the \texttt{knn()} function and found it to be 20 minutes and 35 seconds. From these results, in comparison to the previous, one can argue that the benefit of having a larger data set is greater than the variance introduced by different handwritings. Moreover, the variance in handwriting in the data may even be beneficial to the accuracy of the algorithm.\\
 
 
 
