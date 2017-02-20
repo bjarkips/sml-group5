@@ -1,0 +1,29 @@
+Loading data using sigma = 0.1 
+   user  system elapsed 
+ 66.464   0.008  66.468 
+Training set: 0.6405 
+Test set: 0.6235 
+
+Loading data using sigma = 0.5 
+   user  system elapsed 
+ 66.900   0.080  66.976 
+Training set: 0.7235 
+Test set: 0.702 
+
+Loading data using sigma = 1 
+   user  system elapsed 
+ 66.404   0.008  66.409 
+Training set: 0.8215 
+Test set: 0.828 
+
+Loading data using sigma = 2 
+   user  system elapsed 
+ 66.184   0.052  66.231 
+Training set: 0.932 
+Test set: 0.941 
+
+Loading data using sigma = 5 
+   user  system elapsed 
+ 67.584   0.020  67.592 
+Training set: 0.9895 
+Test set: 0.9915 

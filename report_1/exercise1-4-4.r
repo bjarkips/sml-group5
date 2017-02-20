@@ -7,7 +7,7 @@
 
 source('~/SML/sml-group5/report_1/loadImage2.r')
 
-sigma <- c(.1, .5, 1, 2, 5)
+sigma <- c(250)
 print("Performing kNN classification using gaussian blur preprocessing with varying sigmas")
 print("k is set to 50 and DPI to 300")
 for (sigma_it in sigma) {
@@ -43,4 +43,22 @@ for (sigma_it in sigma) {
   cat("Training set:", success_train, "\n")
   success_test <- sum(true_class_test == class_test)/length(class_test)
   cat("Test set:", success_test, "\n\n")
+  
+  # Perform cross-validation
+  cat("Performing cross-validation", "\n")
+  M_xval <- list()
+  for (i in 1:10) {
+    # Split matrix into 10 parts
+    M_xval[[i]] <- M_shuffled[((i-1)*nrow(M)/10+1):(i*nrow(M)/10),]
+  }
+  for (i in 1:10) {
+    # Recombine 9 parts for training and keep 1 for testing
+    M_xval_test <- M_xval[[i]]
+    M_xval_train <- do.call(rbind, M_xval[-i])
+    true_class_xval <- M_xval_train[,1]
+    class_xval = knn(M_xval_train, M_xval_test, true_class_xval, 50)
+    true_class_xval <- factor(true_class_xval, levels(class_xval))
+    success_xval <- sum(true_class_xval == class_xval)/length(class_xval)
+    cat("Result", i, ":", success_xval, "\n")
+  }
 }
