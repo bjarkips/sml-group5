@@ -60,8 +60,11 @@ for (DPI_it in DPI) {
     M_xval_train <- do.call(rbind, M_xval[-i])
     true_class_xval <- M_xval_train[,1]
     class_xval = knn(M_xval_train, M_xval_test, true_class_xval, k_it)
-    true_class_xval <- factor(true_class_xval, levels(class_xval))
-    success_xval <- sum(true_class_xval == class_xval)/length(class_xval)
+    true_test = M_xval_test[,1]
+    true_test = factor(true_test, levels(class_xval))
+    #true_class_xval <- factor(true_class_xval, levels(class_xval))
+    #success_xval <- sum(true_class_xval == class_xval)/length(class_xval)
+    success_xval = sum(true_test == class_xval)/length(class_xval)
     cat("Result", i, ":", success_xval, "\n")
   }
 }

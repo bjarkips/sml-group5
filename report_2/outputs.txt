@@ -1,82 +1,81 @@
-PCA---------------------------
+PCA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Single-person data:
-                            PC1       PC2       PC3       PC4       PC5       PC6       PC7
-Standard deviation     2.885482 0.7640173 0.6618891 0.6331833 0.4794401 0.4244016 0.3701636
-Proportion of Variance 0.732410 0.0513500 0.0385400 0.0352700 0.0202200 0.0158400 0.0120500
-Cumulative Proportion  0.732410 0.7837500 0.8222900 0.8575600 0.8777800 0.8936200 0.9056800
-                             PC8       PC9      PC10      PC11      PC12      PC13      PC14
-Standard deviation     0.3047462 0.2863968 0.2671628 0.2658584 0.2451482 0.2375597 0.2207167
-Proportion of Variance 0.0081700 0.0072200 0.0062800 0.0062200 0.0052900 0.0049600 0.0042900
-Cumulative Proportion  0.9138500 0.9210600 0.9273400 0.9335600 0.9388400 0.9438100 0.9480900
+Single-person data:`
+
+														 PC1       PC2       PC3       PC4       PC5       PC6       PC7
+Standard deviation     0.7645833 0.6877782 0.6365277 0.4803921 0.4289512 0.3722904 0.3161837
+Proportion of Variance 0.1876100 0.1518100 0.1300300 0.0740600 0.0590500 0.0444800 0.0320800
+Cumulative Proportion  0.1876100 0.3394200 0.4694500 0.5435200 0.6025700 0.6470500 0.6791300
+                             PC8       PC9      PC10     PC11      PC12      PC13      PC14
+Standard deviation     0.2863968 0.2688841 0.2662342 0.254527 0.2434167 0.2343124 0.2138684
+Proportion of Variance 0.0263200 0.0232000 0.0227500 0.020790 0.0190200 0.0176200 0.0146800
+Cumulative Proportion  0.7054600 0.7286600 0.7514100 0.772200 0.7912100 0.8088300 0.8235100
                             PC15      PC16      PC17      PC18      PC19      PC20
-Standard deviation     0.2134294 0.2116494 0.1916893 0.1770329 0.1742882 0.1652742
-Proportion of Variance 0.0040100 0.0039400 0.0032300 0.0027600 0.0026700 0.0024000
-Cumulative Proportion  0.9521000 0.9560400 0.9592700 0.9620300 0.9647000 0.9671100
+Standard deviation     0.2116776 0.1958506 0.1770482 0.1742969 0.1656286 0.1595232
+Proportion of Variance 0.0143800 0.0123100 0.0100600 0.0097500 0.0088000 0.0081700
+Cumulative Proportion  0.8378900 0.8502000 0.8602600 0.8700100 0.8788200 0.8869800
 
+kNN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Multi-person data:
-
-
-Varying k----------------------
-
-Using 3 principal components.
+Using 13 principal components.
 k = 10 
-Test set: 0.999 
+Test set: 0.7485 
 
-Using 3 principal components.
+Using 13 principal components.
+k = 50 
+Test set: 0.6435 
+
+Using 13 principal components.
 k = 200 
-Test set: 0.962 
+Test set: 0.5525 
 
-Using 7 principal components.
-k = 200 
-Test set: 0.945 
-
-Using 15 principal components.
-k = 200 
-Test set: 0.9725 
-
-Using 44 principal components.
-k = 200 
-Test set: 0.9765 
-
-Using 44 principal components.
+Using 23 principal components.
 k = 10 
-Test set: 0.9965 
+Test set: 0.7975 
 
-Using 15 principal components.
+Using 23 principal components.
+k = 50 
+Test set: 0.687 
+
+Using 23 principal components.
+k = 200 
+Test set: 0.599 
+
+Using 36 principal components.
 k = 10 
-Test set: 0.9965 
+Test set: 0.8005 
 
-Using 7 principal components.
+Using 36 principal components.
+k = 50 
+Test set: 0.6785 
+
+Using 36 principal components.
+k = 200 
+Test set: 0.592 
+
+Using 77 principal components.
 k = 10 
-Test set: 0.997 
+Test set: 0.789 
 
-Timing------------------------------
+Using 77 principal components.
+k = 50 
+Test set: 0.6655 
 
-k = 50, DPI = 300
+Using 77 principal components.
+k = 200 
+Test set: 0.5805 
 
-3 Principal components: ~80% of total variance:
-7.173 
-Test set: 0.991 
+Cross-validation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-7 Principal components: ~90% of total variance:
-9.343 
-Test set: 0.9815 
-
-15 Principal components: ~95% of total variance:
-12.965 
-Test set: 0.984 
-
-44 Principal components: ~99% of total variance:
-28.574 
-Test set: 0.9865 
-
-Cross-validation-------------------------
-
-postnorm	0.8675 0.9175 0.8550 0.9500 0.9100 0.8350 0.8175 0.7875 0.9500 0.9000
-prenorm		0.8800 0.9800 0.9225 0.9300 0.9125 0.9050 0.9375 0.9350 0.8950 0.9000
-mean postnorm 0.879
-mean prenorm	0.91975
-sd postnorm		0.05554278
-sd prenorm		0.02817234
+> prenorm_res
+ [1] 0.7500 0.7625 0.7325 0.7500 0.7125 0.7650 0.7625 0.7200 0.7300 0.7650
+> postnorm_res
+ [1] 0.7575 0.7650 0.7375 0.7475 0.7175 0.7600 0.7575 0.7225 0.7275 0.7625
+> mean(prenorm_res)
+[1] 0.745
+> mean(postnorm_res)
+[1] 0.7455
+> sd(prenorm_res)
+[1] 0.01979057
+> sd(postnorm_res)
+[1] 0.01786524
