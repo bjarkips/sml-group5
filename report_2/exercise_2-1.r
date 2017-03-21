@@ -23,7 +23,9 @@ axis(1, at = plotrange, labels = colnames(imp)[plotrange])
 breakpoints = c(13, 23, 36, 77)
 ks = c(10, 50, 200)
 for (bp in breakpoints) {
-  for(k in ks) {
+  #for(k in ks) {
+#bp = 13
+k = 50
     cat("Using", bp, "principal components.\n")
     M_reduced = M_PCA[['x']][,1:bp]
     
@@ -36,12 +38,16 @@ for (bp in breakpoints) {
     
     # Train on training set and test on test set
     class_test = knn(M_train, M_test, true_class_train, k)
+    tic = proc.time()
     #system.time(replicate(100, knn(M_train, M_test, true_class_train, k)))
+    replicate(100, knn(M_train, M_test, true_class_train, k))
+    toc <- proc.time() - tic
+    print(toc)
     cat("k =", k, "\n")
     true_class_test <- factor(true_class_test, levels(class_test))
     
     # Show results
     success_test <- sum(true_class_test == class_test)/length(class_test)
     cat("Test set:", success_test, "\n\n")
-  }
+  #}
 }

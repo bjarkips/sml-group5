@@ -65,6 +65,31 @@ Using 77 principal components.
 k = 200 
 Test set: 0.5805 
 
+Timing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using 13 principal components.
+   user  system elapsed 
+ 12.100   0.008  12.108 
+k = 50 
+Test set: 0.65 
+
+Using 23 principal components.
+   user  system elapsed 
+ 16.856   0.000  16.854 
+k = 50 
+Test set: 0.689 
+
+Using 36 principal components.
+   user  system elapsed 
+ 23.452   0.004  23.453 
+k = 50 
+Test set: 0.682 
+
+Using 77 principal components.
+   user  system elapsed 
+ 44.708   0.008  44.712 
+k = 50 
+Test set: 0.67 
+
 Cross-validation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 > prenorm_res
