@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,65 +725,123 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<timing.png, id=1, 435.87843pt x 283.81032pt>
-File: timing.png Graphic file (type png)
- <use timing.png>
-Package pdftex.def Info: timing.png used on input line 104.
+<scree.png, id=1, 435.87843pt x 283.81032pt>
+File: scree.png Graphic file (type png)
+ <use scree.png>
+Package pdftex.def Info: scree.png used on input line 102.
 (pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
+<timing.png, id=2, 435.87843pt x 283.81032pt>
+File: timing.png Graphic file (type png)
+ <use timing.png>
+Package pdftex.def Info: timing.png used on input line 111.
+(pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
+ [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<accuracy2.png, id=9, 435.87843pt x 283.81032pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<accuracy2.png, id=10, 435.87843pt x 283.81032pt>
 File: accuracy2.png Graphic file (type png)
  <use accuracy2.png>
-Package pdftex.def Info: accuracy2.png used on input line 113.
+Package pdftex.def Info: accuracy2.png used on input line 120.
 (pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3 <./timing.png> <./accuracy2.png (PNG copy)>]
-<prenorm.png, id=17, 435.87843pt x 283.81032pt>
+[2] [3 <./scree.png> <./timing.png>] [4 <./accuracy2.png (PNG copy)>]
+<scree_m.png, id=22, 435.87843pt x 283.81032pt>
+File: scree_m.png Graphic file (type png)
+ <use scree_m.png>
+Package pdftex.def Info: scree_m.png used on input line 152.
+(pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
+
+<timing_m.png, id=23, 435.87843pt x 283.81032pt>
+File: timing_m.png Graphic file (type png)
+ <use timing_m.png>
+Package pdftex.def Info: timing_m.png used on input line 161.
+(pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<accuracy2_m.png, id=24, 435.87843pt x 283.81032pt>
+File: accuracy2_m.png Graphic file (type png)
+ <use accuracy2_m.png>
+Package pdftex.def Info: accuracy2_m.png used on input line 170.
+(pdftex.def)             Requested size: 334.60571pt x 217.86769pt.
+
+[5
+
+ <./scree_m.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./timing_m.png>] [7 <./accuracy2_m.png (PNG copy)>]
+<prenorm.png, id=37, 435.87843pt x 283.81032pt>
 File: prenorm.png Graphic file (type png)
  <use prenorm.png>
-Package pdftex.def Info: prenorm.png used on input line 131.
+Package pdftex.def Info: prenorm.png used on input line 188.
 (pdftex.def)             Requested size: 204.94751pt x 133.44283pt.
 
-<postnorm.png, id=18, 435.87843pt x 283.81032pt>
+<postnorm.png, id=38, 435.87843pt x 283.81032pt>
 File: postnorm.png Graphic file (type png)
  <use postnorm.png>
-Package pdftex.def Info: postnorm.png used on input line 136.
+Package pdftex.def Info: postnorm.png used on input line 193.
 (pdftex.def)             Requested size: 204.94751pt x 133.44283pt.
 
-Overfull \hbox (0.706pt too wide) in paragraph at lines 131--137
+Overfull \hbox (0.706pt too wide) in paragraph at lines 188--194
  [][][] 
  []
 
-[4
+[8
 
- <./prenorm.png (PNG copy)> <./postnorm.png (PNG copy)>] (./report2.aux) ) 
+ <./prenorm.png (PNG copy)> <./postnorm.png (PNG copy)>]
+<pre_m.png, id=42, 435.87843pt x 283.81032pt>
+File: pre_m.png Graphic file (type png)
+ <use pre_m.png>
+Package pdftex.def Info: pre_m.png used on input line 209.
+(pdftex.def)             Requested size: 204.94751pt x 133.44283pt.
+
+<post_m.png, id=43, 435.87843pt x 283.81032pt>
+File: post_m.png Graphic file (type png)
+ <use post_m.png>
+Package pdftex.def Info: post_m.png used on input line 214.
+(pdftex.def)             Requested size: 204.94751pt x 133.44283pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 209--215
+ [][][] 
+ []
+
+[9
+
+ <./pre_m.png (PNG copy)> <./post_m.png (PNG copy)>] (./report2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8186 strings out of 493029
- 124445 string characters out of 6136234
- 355729 words of memory out of 5000000
- 11560 multiletter control sequences out of 15000+600000
+ 8226 strings out of 493029
+ 125015 string characters out of 6136234
+ 355815 words of memory out of 5000000
+ 11594 multiletter control sequences out of 15000+600000
  91648 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,10n,54p,523b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr
-/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/ad
-obe/utopia/putr8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftc1095.pf
-b>
-Output written on report2.pdf (4 pages, 100995 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/adobe/utopia/putr8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftc
+1095.pfb>
+Output written on report2.pdf (9 pages, 178831 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

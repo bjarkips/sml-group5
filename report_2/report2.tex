@@ -75,7 +75,7 @@
 \section{PCA}
 For this part of the exercise we used PCA to reduce the dimensionality of the data and observed the effect on kNN classification of using the first principal components resembling 80, 90, 95 and 99\% of the total variance. We tested for classification accuracy and computation times for varying k.\par% We refer to the number of principal components used as \#PC.\par
 \subsection{Single-person data}
-Information on the first 10 principal components, in order, is shown in table \ref{tab:pca}. These correspond to the data from member 1 in group 5. This is how we determine the breakpoints for 80, 90, 95 and 99\% of the total variance. They are 13, 23, 36 and 77, respectively. \par
+Information on the first 10 principal components, in order, is shown in table \ref{tab:pca}. These correspond to the data from member 1 in group 5. This is how we determine the breakpoints for 80, 90, 95 and 99\% of the total variance. They are 13, 23, 36 and 77, respectively. This is also illustrated in figure \ref{fig:scree}. \par
 
 \begin{table}[h]
 \centering
@@ -97,6 +97,13 @@ PC\# & Standard Deviation & Proportion of Variance & Cumulative PV \\ \hline
 \end{tabular}
 \end{table}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{scree.png}
+	\caption{Scree-plot of the first 10 principal components.}
+	\label{fig:scree}
+\end{figure}
+
 Figure \ref{fig:timing} shows the results from setting k to 50, varying the number of principal components according to the breakpoints mentioned and measuring the average execution time of the kNN classification step. We see that there is a linear relationship between the two.\par
 
 \begin{figure}[h]
@@ -115,10 +122,60 @@ Figure \ref{fig:acc} shows the classification accuracy for varying numbers of pr
 	\label{fig:acc}
 \end{figure}
 
+\clearpage
+\subsection{Multi-person data}
 
+Information on the first 10 principal components, in order, is shown in table \ref{tab:pca_m}. In this case the breakpoints are 20, 31, 45 and 89 for 80, 90, 95 and 99\%, respectively. This is illustrated in figure \ref{fig:scree_m}.\par
+
+\begin{table}[h]
+\centering
+\caption{The first 10 principal components.}
+\label{tab:pca_m}
+\begin{tabular}{|c|r|r|r|}
+\hline
+PC\# & Standard Deviation & Proportion of Variance & Cumulative PV \\ \hline
+1    & .8013              & .1336                  & .1336         \\
+2    & .7457              & .1157                  & .2493         \\
+3    & .5915              & .0728                  & .3220         \\
+4    & .5542              & .0639                  & .3859         \\
+5    & .5369              & .0600                  & .4459         \\
+6    & .4652              & .0450                  & .4909         \\
+7    & .4434              & .0409                  & .5318         \\
+8    & .4335              & .0391                  & .5709         \\
+9    & .3806              & .0301                  & .6010         \\
+10   & .3757              & .0294                  & .6304         \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{scree_m.png}
+	\caption{Scree-plot of the first 10 principal components.}
+	\label{fig:scree_m}
+\end{figure}
+
+Figure \ref{fig:timing_m} shows the results from setting k to 50, varying the number of principal components according to the breakpoints mentioned and measuring the average execution time of the kNN classification step. Again we see that there is a linear relationship between the two. This time around the timings were less accurate due to time constraints and the size of the dataset.\par
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{timing_m.png}
+	\caption{Timing results with a varying number of principal components.}
+	\label{fig:timing_m}
+\end{figure}
+
+Figure \ref{fig:acc_m} shows the classification accuracy for varying numbers of principal components and varying k. This is similar to what we saw for the single-person dataset.%We see that the behaviour is similar for varying k and that the effect of using more principal components is negligible above 90\% of total variance.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{accuracy2_m.png}
+	\caption{Classification accuracy results for varying k and Proportion of Variance.}
+	\label{fig:acc_m}
+\end{figure}
+
+\clearpage
 \section{Normalization}
 In this section we analyze the effects of applying Min-Max Normalization before the PCA step (pre-normalization) or after (post-normalization). To this end, we perform a cross-validation of the kNN classifier and compare the results.\par
-\clearpage
+
 \subsection{Single-person data}
 Figure \ref{fig:hist} shows the results of cross-validation on pre-normalized and post-normalized data. We see that the results are near-identical. This is logical as PCA depends on the eigenvalue decomposition of the covariance matrix and is therefore not significantly altered by normalization via robust methods.
 
@@ -134,8 +191,29 @@ Figure \ref{fig:hist} shows the results of cross-validation on pre-normalized an
         \includegraphics[width=0.49\textwidth]{postnorm.png}
         \label{fig:post}
     }
-    \caption{Histogram of cross-validation results with k=50 using 36 principal components.}
+    \caption{Histogram of cross-validation results with k=50 using 36 principal components (95\% of total variance).}
     \label{fig:hist}
+\end{figure}
+
+\clearpage
+\subsection{Multi-person data}
+
+Figure \ref{fig:hist} shows the results of cross-validation on pre-normalized and post-normalized data. Again the results are near-identical.%We see that the results are near-identical. This is logical as PCA depends on the eigenvalue decomposition of the covariance matrix and is therefore not significantly altered by normalization via robust methods.
+
+\begin{figure}[h]
+    \centering
+    \subfloat[Pre-normalization]
+	{
+        \includegraphics[width=0.49\textwidth]{pre_m.png}
+        \label{fig:pre_m}
+	}
+	\subfloat[Post-normalization]
+	{
+        \includegraphics[width=0.49\textwidth]{post_m.png}
+        \label{fig:post_m}
+    }
+    \caption{Histogram of cross-validation results with k=50 using 45 principal components (95\% of total variance).}
+    \label{fig:hist_m}
 \end{figure}
 
 %We will be using R which is a statistical language in order to test the k-nearest neighbor algorithm, firstly we will have to generate our data-sets which are taken from scanned ciphers and loaded through the function \texttt{loadSinglePersonsData}, once the data is loaded we shuffle the data with a seed for reproducible results. With this done we split the data into test and train so that we are able to test the data after we have trained and be able to use different data from the one that was trained.

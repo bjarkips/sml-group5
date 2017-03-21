@@ -3,11 +3,11 @@ library(class)
 k = 50
 
 M_prenorm = (M_shuffled[,2:ncol(M_shuffled)] - min(M_shuffled[,2:ncol(M_shuffled)])) / (max(M_shuffled[,2:ncol(M_shuffled)]) - min(M_shuffled[,2:ncol(M_shuffled)]))
-M_reduced = M_PCA[['x']][,1:36]
+M_reduced = M_PCA[['x']][,1:45]
 M_PCA_prenorm = prcomp(M_prenorm, retx = TRUE)
 summ = summary(M_PCA_prenorm)
 imp = summ[['importance']]
-M_reduced_prenorm = M_PCA_prenorm[['x']][,1:36]
+M_reduced_prenorm = M_PCA_prenorm[['x']][,1:45]
 M_reduced_postnorm = (M_reduced - min(M_reduced)) / (max(M_reduced) - min(M_reduced))
 
 
