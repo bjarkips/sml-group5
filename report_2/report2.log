@@ -1,64 +1,74 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 11:15
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**report2.tex
-(./report2.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
+**./report2.tex
+(report2.tex
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrart
+cl.cls"
+Document Class: scrartcl 2017/01/03 v3.22 KOMA-Script document class (article)
+
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkba
+se.sty"
+Package: scrkbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbas
+e.sty"
+Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfi
+le.sty"
+Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
+)))
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\tocbas
+ic.sty"
+Package: tocbasic 2017/01/03 v3.22 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip41
+\scr@dte@tocline@numbox=\box26
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 123.
+(tocbasic)             for `toc' on input line 130.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 124.
+(tocbasic)             for `lof' on input line 131.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 125.
+(tocbasic)             for `lot' on input line 132.
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
-ine 2033.
+ine 2053.
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
-t)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrsiz
+e11pt.clo"
+File: scrsize11pt.clo 2017/01/03 v3.22 KOMA-Script font size class option (11pt
 )
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
+)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\typear
+ea.sty"
+Package: typearea 2017/01/03 v3.22 KOMA-Script package (type area)
 
-Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+Package typearea, 2017/01/03 v3.22 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
-\ta@bcor=\skip41
+\ta@bcor=\skip42
 \ta@div=\count79
-\ta@hblk=\skip42
-\ta@vblk=\skip43
-\ta@temp=\skip44
-\footheight=\skip45
+\ta@hblk=\skip43
+\ta@vblk=\skip44
+\ta@temp=\skip45
+\footheight=\skip46
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
@@ -75,7 +85,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1509.
+(typearea)              on input line 1583.
 )
 \c@part=\count80
 \c@section=\count81
@@ -83,17 +93,26 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count83
 \c@paragraph=\count84
 \c@subparagraph=\count85
-LaTeX Info: Redefining \textsubscript on input line 3906.
-\abovecaptionskip=\skip46
-\belowcaptionskip=\skip47
-\c@pti@nb@sid@b@x=\box26
+\scr@dte@part@maxnumwidth=\skip47
+\scr@dte@section@maxnumwidth=\skip48
+\scr@dte@subsection@maxnumwidth=\skip49
+\scr@dte@subsubsection@maxnumwidth=\skip50
+\scr@dte@paragraph@maxnumwidth=\skip51
+\scr@dte@subparagraph@maxnumwidth=\skip52
+LaTeX Info: Redefining \textsubscript on input line 4076.
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\c@pti@nb@sid@b@x=\box27
 \c@figure=\count86
 \c@table=\count87
+Class scrartcl Info: Redefining `\numberline' on input line 5125.
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
+)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \c@tracingmulticols=\count88
-\mult@box=\box27
+\mult@box=\box28
 \multicol@leftmargin=\dimen103
 \c@unbalance=\count89
 \c@collectmore=\count90
@@ -104,16 +123,15 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \page@free=\dimen105
 \premulticols=\dimen106
 \postmulticols=\dimen107
-\multicolsep=\skip48
-\multicolbaselineskip=\skip49
-\partial@page=\box28
-\last@line=\box29
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box29
+\last@line=\box30
 \maxbalancingoverflow=\dimen108
-\mult@rightbox=\box30
-\mult@grightbox=\box31
-\mult@gfirstbox=\box32
-\mult@firstbox=\box33
-\@tempa=\box34
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
 \@tempa=\box35
 \@tempa=\box36
 \@tempa=\box37
@@ -130,34 +148,33 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box48
 \@tempa=\box49
 \@tempa=\box50
+\@tempa=\box51
 \c@columnbadness=\count94
 \c@finalcolumnbadness=\count95
 \last@try=\dimen109
 \multicolovershoot=\dimen110
 \multicolundershoot=\dimen111
-\mult@nat@firstbox=\box51
-\colbreak@box=\box52
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
 \mc@col@check@num=\count96
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+) ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+"
+Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+ ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/home/bjarkips/texmf/tex/latex/fourier/fourier.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier.st
+y"
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+ ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+ ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2017/01/24 v2.0c Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -170,8 +187,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -238,7 +254,8 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/home/bjarkips/texmf/tex/latex/fourier/fourier-orns.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier-or
+ns.sty"
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
@@ -337,14 +354,21 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 \symUfutm=\mathgroup5
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\engl
+ish.ldf"
+Language: english 2017/01/24 v3.3q English support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count97
 \U@D=\dimen112
 )
@@ -352,41 +376,47 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip50
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen113
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count99
 \leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count101
 \DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
 \big@size=\dimen115
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count103
 \c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
@@ -404,13 +434,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \totwidth@=\dimen120
 \lineht@=\dimen121
 \@envbody=\toks18
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip58
+\multlinetaggap=\skip59
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
@@ -418,21 +449,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks20
 \thm@bodyfont=\toks21
 \thm@headfont=\toks22
 \thm@notefont=\toks23
 \thm@headpunct=\toks24
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
 \dth@everypar=\toks25
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
 \lst@mode=\count110
-\lst@gtempboxa=\box55
+\lst@gtempboxa=\box56
 \lst@token=\toks26
 \lst@length=\count111
 \lst@currlwidth=\dimen122
@@ -444,57 +476,67 @@ Package: amsthm 2015/03/04 v2.20.2
 \lst@lineno=\count115
 \lst@maxwidth=\dimen125
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count116
 \lst@skipnumbers=\count117
-\lst@framebox=\box56
+\lst@framebox=\box57
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count118
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count119
 ))
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen128
 \captionmargin@=\dimen129
@@ -509,20 +551,21 @@ Package caption Info: KOMA-Script document class.
 Package caption Info: listings package is loaded.
 )
 \c@KVtest=\count121
-\sf@farskip=\skip56
+\sf@farskip=\skip63
 \sf@captopadj=\dimen135
-\sf@capskip=\skip57
-\sf@nearskip=\skip58
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
 \c@subfigure=\count122
 \c@subfigure@save=\count123
 \c@lofdepth=\count124
 \c@subtable=\count125
 \c@subtable@save=\count126
 \c@lotdepth=\count127
-\sf@top=\skip59
-\sf@bottom=\skip60
+\sf@top=\skip66
+\sf@bottom=\skip67
 )
-(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sectsty\sectsty.st
+y"
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
@@ -534,17 +577,186 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              Nevertheless, using requested
 (scrartcl)              package `fancyhdr' on input line 20.
 
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip61
-\f@ncyO@elh=\skip62
-\f@ncyO@erh=\skip63
-\f@ncyO@olh=\skip64
-\f@ncyO@orh=\skip65
-\f@ncyO@elf=\skip66
-\f@ncyO@erf=\skip67
-\f@ncyO@olf=\skip68
-\f@ncyO@orf=\skip69
-) (./report2.aux)
+
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
+sty"
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip68
+\f@ncyO@elh=\skip69
+\f@ncyO@erh=\skip70
+\f@ncyO@olh=\skip71
+\f@ncyO@orh=\skip72
+\f@ncyO@elf=\skip73
+\f@ncyO@erf=\skip74
+\f@ncyO@olf=\skip75
+\f@ncyO@orf=\skip76
+) (report2.aux
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:ciph' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:hist' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:post' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:post' multiply defined.
+
+
+LaTeX Warning: Label `fig:hist' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `fig:pre' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pre' multiply defined.
+
+)
 \openout1 = `report2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -562,7 +774,9 @@ LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 54.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 54.
 
-(/home/bjarkips/texmf/tex/latex/fourier/fmlfutm.fd
+
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
+"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 54.
@@ -570,7 +784,8 @@ LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 54.
 LaTeX Font Info:    Try loading font information for FMS+futm on input line 54.
 
 
-(/home/bjarkips/texmf/tex/latex/fourier/fmsfutm.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
+"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 54.
@@ -578,29 +793,30 @@ LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 54.
 LaTeX Font Info:    Try loading font information for FMX+futm on input line 54.
 
 
-(/home/bjarkips/texmf/tex/latex/fourier/fmxfutm.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
+"
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Try loading font information for T1+futs on input line 54.
-
-(/home/bjarkips/texmf/tex/latex/fourier/t1futs.fd
+ ("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd
+"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 \c@lstlisting=\count128
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen136
-\scratchbox=\box57
+\scratchbox=\box58
 \nofMPsegments=\count130
 \nofMParguments=\count131
 \everyMPshowfont=\toks27
@@ -609,66 +825,74 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 \MPnumerator=\count133
 \makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks28
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 57.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 57
 .
 
-(/home/bjarkips/texmf/tex/latex/fourier/fmlfutmi.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.f
+d"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -685,12 +909,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 57.
 LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 57.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -702,7 +925,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 ne 63.
 
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 75.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+("C:\Users\mikeh\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Overfull \hbox (4.28914pt too wide) in paragraph at lines 75--75
@@ -737,8 +960,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<accuracy2.png, id=9, 435.87843pt x 283.81032pt>
+{C:/Users/mikeh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<accuracy2.png, id=8, 435.87843pt x 283.81032pt>
 File: accuracy2.png Graphic file (type png)
  <use accuracy2.png>
 Package pdftex.def Info: accuracy2.png used on input line 113.
@@ -748,13 +971,13 @@ Package pdftex.def Info: accuracy2.png used on input line 113.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] [3 <./timing.png> <./accuracy2.png (PNG copy)>]
-<prenorm.png, id=17, 435.87843pt x 283.81032pt>
+<prenorm.png, id=16, 435.87843pt x 283.81032pt>
 File: prenorm.png Graphic file (type png)
  <use prenorm.png>
 Package pdftex.def Info: prenorm.png used on input line 131.
 (pdftex.def)             Requested size: 204.94751pt x 133.44283pt.
 
-<postnorm.png, id=18, 435.87843pt x 283.81032pt>
+<postnorm.png, id=17, 435.87843pt x 283.81032pt>
 File: postnorm.png Graphic file (type png)
  <use postnorm.png>
 Package pdftex.def Info: postnorm.png used on input line 136.
@@ -764,26 +987,264 @@ Overfull \hbox (0.706pt too wide) in paragraph at lines 131--137
  [][][] 
  []
 
+<cipher9.png, id=18, 648.17157pt x 400.49625pt>
+File: cipher9.png Graphic file (type png)
+ <use cipher9.png>
+Package pdftex.def Info: cipher9.png used on input line 156.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<cipher10.png, id=19, 648.17157pt x 400.49625pt>
+File: cipher10.png Graphic file (type png)
+ <use cipher10.png>
+Package pdftex.def Info: cipher10.png used on input line 161.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 156--161
+ [][][] 
+ []
+
+<cipher1.png, id=20, 648.17157pt x 400.49625pt>
+File: cipher1.png Graphic file (type png)
+ <use cipher1.png>
+Package pdftex.def Info: cipher1.png used on input line 172.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<cipher2.png, id=21, 648.17157pt x 400.49625pt>
+File: cipher2.png Graphic file (type png)
+ <use cipher2.png>
+Package pdftex.def Info: cipher2.png used on input line 177.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 172--177
+ [][][] 
+ []
+
+<cipher3.png, id=22, 648.17157pt x 400.49625pt>
+File: cipher3.png Graphic file (type png)
+ <use cipher3.png>
+Package pdftex.def Info: cipher3.png used on input line 182.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<cipher4.png, id=23, 648.17157pt x 400.49625pt>
+File: cipher4.png Graphic file (type png)
+ <use cipher4.png>
+Package pdftex.def Info: cipher4.png used on input line 187.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 182--187
+ [][][] 
+ []
+
+<cipher5.png, id=24, 648.17157pt x 400.49625pt>
+File: cipher5.png Graphic file (type png)
+ <use cipher5.png>
+Package pdftex.def Info: cipher5.png used on input line 192.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<cipher6.png, id=25, 648.17157pt x 400.49625pt>
+File: cipher6.png Graphic file (type png)
+ <use cipher6.png>
+Package pdftex.def Info: cipher6.png used on input line 197.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 192--197
+ [][][] 
+ []
+
+<cipher7.png, id=26, 648.17157pt x 400.49625pt>
+File: cipher7.png Graphic file (type png)
+ <use cipher7.png>
+Package pdftex.def Info: cipher7.png used on input line 202.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<cipher8.png, id=27, 648.17157pt x 400.49625pt>
+File: cipher8.png Graphic file (type png)
+ <use cipher8.png>
+Package pdftex.def Info: cipher8.png used on input line 207.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 202--208
+ [][][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 37.33427pt on input line 210.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [4
 
- <./prenorm.png (PNG copy)> <./postnorm.png (PNG copy)>] (./report2.aux) ) 
+ <./prenorm.png (PNG copy)> <./postnorm.png (PNG copy)> <./cipher9.png> <./ciph
+er10.png>] [5 <./cipher1.png> <./cipher2.png> <./cipher3.png> <./cipher4.png> <
+./cipher5.png> <./cipher6.png> <./cipher7.png> <./cipher8.png>]
+<eigen1.png, id=44, 648.17157pt x 400.49625pt>
+File: eigen1.png Graphic file (type png)
+ <use eigen1.png>
+Package pdftex.def Info: eigen1.png used on input line 225.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<eigen2.png, id=45, 648.17157pt x 400.49625pt>
+File: eigen2.png Graphic file (type png)
+ <use eigen2.png>
+Package pdftex.def Info: eigen2.png used on input line 230.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 225--230
+ [][][] 
+ []
+
+<eigen3.png, id=46, 648.17157pt x 400.49625pt>
+File: eigen3.png Graphic file (type png)
+ <use eigen3.png>
+Package pdftex.def Info: eigen3.png used on input line 235.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<eigen4.png, id=47, 648.17157pt x 400.49625pt>
+File: eigen4.png Graphic file (type png)
+ <use eigen4.png>
+Package pdftex.def Info: eigen4.png used on input line 240.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 235--240
+ [][][] 
+ []
+
+<eigen5.png, id=48, 648.17157pt x 400.49625pt>
+File: eigen5.png Graphic file (type png)
+ <use eigen5.png>
+Package pdftex.def Info: eigen5.png used on input line 250.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<eigen6.png, id=49, 648.17157pt x 400.49625pt>
+File: eigen6.png Graphic file (type png)
+ <use eigen6.png>
+Package pdftex.def Info: eigen6.png used on input line 255.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 250--255
+ [][][] 
+ []
+
+<eigen7.png, id=50, 648.17157pt x 400.49625pt>
+File: eigen7.png Graphic file (type png)
+ <use eigen7.png>
+Package pdftex.def Info: eigen7.png used on input line 260.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<eigen8.png, id=51, 648.17157pt x 400.49625pt>
+File: eigen8.png Graphic file (type png)
+ <use eigen8.png>
+Package pdftex.def Info: eigen8.png used on input line 265.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 260--265
+ [][][] 
+ []
+
+<eigen9.png, id=52, 648.17157pt x 400.49625pt>
+File: eigen9.png Graphic file (type png)
+ <use eigen9.png>
+Package pdftex.def Info: eigen9.png used on input line 270.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<eigen10.png, id=53, 648.17157pt x 400.49625pt>
+File: eigen10.png Graphic file (type png)
+ <use eigen10.png>
+Package pdftex.def Info: eigen10.png used on input line 275.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 270--276
+ [][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6
+
+ <./eigen1.png> <./eigen2.png> <./eigen3.png> <./eigen4.png>] [7 <./eigen5.png>
+ <./eigen6.png> <./eigen7.png> <./eigen8.png> <./eigen9.png> <./eigen10.png>] <
+recon1.png, id=71, 648.17157pt x 400.49625pt>
+File: recon1.png Graphic file (type png)
+ <use recon1.png>
+Package pdftex.def Info: recon1.png used on input line 286.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+[8
+
+ <./recon1.png>] <recon80.png, id=76, 648.17157pt x 400.49625pt>
+File: recon80.png Graphic file (type png)
+
+<use recon80.png>
+Package pdftex.def Info: recon80.png used on input line 304.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+ <recon90.png, id=77, 648.17157pt x 400.49625pt>
+File: recon90.png Graphic file (type png)
+
+<use recon90.png>
+Package pdftex.def Info: recon90.png used on input line 309.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 304--309
+ [][][] 
+ []
+
+<recon95.png, id=78, 648.17157pt x 400.49625pt>
+File: recon95.png Graphic file (type png)
+ <use recon95.png>
+Package pdftex.def Info: recon95.png used on input line 314.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (81.69722pt too wide) in paragraph at lines 321--327
+[][] 
+ []
+
+[9
+
+ <./recon80.png> <./recon90.png> <./recon95.png>]
+<10score1.png, id=85, 648.17157pt x 400.49625pt>
+File: 10score1.png Graphic file (type png)
+ <use 10score1.png>
+Package pdftex.def Info: 10score1.png used on input line 336.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+<10score2.png, id=86, 648.17157pt x 400.49625pt>
+File: 10score2.png Graphic file (type png)
+ <use 10score2.png>
+Package pdftex.def Info: 10score2.png used on input line 341.
+(pdftex.def)             Requested size: 204.94751pt x 126.63364pt.
+
+Overfull \hbox (0.706pt too wide) in paragraph at lines 336--342
+ [][][] 
+ []
+
+[10
+
+ <./10score1.png> <./10score2.png>] (report2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8186 strings out of 493029
- 124445 string characters out of 6136234
- 355729 words of memory out of 5000000
- 11560 multiletter control sequences out of 15000+600000
- 91648 words of font info for 94 fonts, out of 8000000 for 9000
+ 8708 strings out of 493333
+ 140308 string characters out of 3130143
+ 390736 words of memory out of 3000000
+ 12048 multiletter control sequences out of 15000+200000
+ 91648 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,10n,54p,523b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr
-/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/ad
-obe/utopia/putr8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftc1095.pf
-b>
-Output written on report2.pdf (4 pages, 100995 bytes).
+ 50i,10n,54p,8841b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mikeh\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ectc1095.pk>{C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
+ase/8r.enc}<C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/
+utopia/putr8a.pfb>
+Output written on report2.pdf (10 pages, 185672 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
