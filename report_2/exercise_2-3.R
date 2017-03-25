@@ -1,4 +1,6 @@
-source('C:/Users/mikeh/Documents/Tec/8Semestre(Dinamarca)/Statistical Machine Learning/sml-group5/report_2/loadImage.R')
+#source('C:/Users/mikeh/Documents/Tec/8Semestre(Dinamarca)/Statistical Machine Learning/sml-group5/report_2/loadImage.R')
+source('~/workspace/SML/trunk/Basefolder/loadImage.R')
+cipherNum = 1
 cipherNum = 1
 
 imageSize <- sqrt(ncol(M_PCA[['rotation']]))
