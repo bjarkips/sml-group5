@@ -30,5 +30,5 @@ plot(hc_downsampled_2, labels = M_downsampled_2[,1], xlab = 'Distance', sub = ''
 
 list[M_clustered_2, cluster_labels_2] = clustering(M_shuffled_2, 5)
 hc_clustered_2 = hclust(dist(M_clustered_2))
-dev.new()
+#dev.new()
 plot(hc_clustered_2, labels = cluster_labels_2, xlab = 'Distance', sub = '', main = 'K-means Clustering')
