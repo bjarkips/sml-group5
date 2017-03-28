@@ -7,24 +7,8 @@ source('./src/utilityFunctions.r')
 # This is used for catching multiple function outputs (via list[])
 source("https://raw.githubusercontent.com/ggrothendieck/gsubfn/master/R/list.R")
 
-#require('scatterplot3d')
-
 graphics.off()
 set.seed(123)
-"if(!exists('M_s')) {  # _s stands for single-person data
-  
-  # Load and shuffle data
-  M_s = loadSinglePersonsData(100, 'group5', 1, '/home/bjarkips/workspace/SML/trunk/2017/')
-  M_shuffled_s = M_s[sample(nrow(M_s)),]
-  
-  # Reduce dimensionality to 90% of total variance
-  M_PCA_s = prcomp(M_shuffled_s[,2:ncol(M_shuffled_s)], retx = TRUE)
-  summ = summary(M_PCA_s)
-  imp = summ[['importance']]
-  cumulative_prop = imp['Cumulative Proportion',]
-  num_pc_s = findBreakpoint(cumulative_prop)
-  M_reduced_s = M_PCA_s[['x']][,1:num_pc_s]
-}"
 
 if (!exists("M_2")) { # _2 stands for 2-person data
   

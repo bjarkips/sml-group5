@@ -1,4 +1,4 @@
-# Complementary functions to exercise_3-1.r
+# Complementary functions to exercise 3
 # Created 22.03.2017
 #------------------------------------------
 
@@ -23,8 +23,8 @@ clustering = function(id, means_k){
   cipher_cluster = c()
   label_cluster = c()
   for( i in 0:9) {
-    clusterData = kmeans(id[ id[,1] == i, -1 ], means_k)
-    cipher_cluster[[i + 1]] = clusterData$centers
+    cluster_data = kmeans(id[ id[,1] == i, -1 ], means_k)
+    cipher_cluster[[i + 1]] = cluster_data$centers
     label_cluster[[i + 1]] = c(1:means_k)*0 + i
   }
   train_lab = factor(unlist(label_cluster))
@@ -33,4 +33,15 @@ clustering = function(id, means_k){
     train_dat = rbind(train_dat,cipher_cluster[[i]])
   }
   return(list(train_dat, train_lab))
+}
+
+# Downsample matrix by randomly sampling n of each cipher
+downsample = function(M, num_per_cipher = 5) {
+  M_downsampled_list = list()
+  for (i in 0:9) {
+    M_ciph = M[ M[,1] == i,]
+    M_downsampled_list[[i+1]] = M_ciph[sample(1:nrow(M_ciph),num_per_cipher),]
+  }
+  M_downsampled = do.call(rbind, M_downsampled_list)
+  return(M_downsampled)
 }
