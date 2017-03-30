@@ -2,7 +2,7 @@ source('C:/Users/mikeh/Documents/Tec/8Semestre(Dinamarca)/Statistical Machine Le
 cipherNum = 1
 
 imageSize <- sqrt(ncol(M_PCA[['rotation']]))
-imageM <- matrix( M_PCA[['rotation']][,1],nrow = imageSize,ncol = imageSize,byrow = FALSE)
+imageM <- matrix( M_PCA[['rotation']][,3],nrow = imageSize,ncol = imageSize,byrow = FALSE)
 
 #imageM <- matrix( M[cipherNum,2:ncol(M)],nrow = imageSize,ncol = imageSize,byrow = FALSE)
 

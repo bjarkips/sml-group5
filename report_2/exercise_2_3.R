@@ -18,7 +18,7 @@ image(rotate(matrix(M_PCA$rotation[1:nrow(M_PCA$rotation),10],nrow = imageSize,n
 
 
 #getting the reconstruction of the images
-trunc <- M_PCA$x[50,1:10] %*% t(M_PCA$rotation[,1:10])
+trunc <- M_PCA$x[1,1:10] %*% t(M_PCA$rotation[,1:10])
 trunc <- scale(trunc, center = -1 * M_PCA$center, scale=FALSE)
 #19/80
 #30/90
