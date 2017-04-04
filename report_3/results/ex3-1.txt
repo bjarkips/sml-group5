@@ -1,0 +1,21 @@
+Using 200 clusters.
+Person-dependent accuracy:	 0.8965
+Person-independent accuracy:	 0.16525[1] "\n"
+
+> source('~/workspace/SML/sml-group5/report_3/exercise_3-1.r')
+
+Using 200 clusters.
+Person-dependent accuracy:	 0.8965
+Person-independent accuracy:	 0.16525[1] "\n"
+
+Using 100 clusters.
+Person-dependent accuracy:	 0.881
+Person-independent accuracy:	 0.15725[1] "\n"
+
+Using 50 clusters.
+Person-dependent accuracy:	 0.854
+Person-independent accuracy:	 0.1455[1] "\n"
+
+Using 25 clusters.
+Person-dependent accuracy:	 0.819
+Person-independent accuracy:	 0.13125[1] "\n"
