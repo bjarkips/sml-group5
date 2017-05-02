@@ -32,13 +32,14 @@ for (i in 1:10) {
   
   pred_rf<-predict(class_xval_rf, M_xval_test)
   
-  true_class_xval_test_rf = factor(M_xval_test$V1, levels(pred))
-  success_xval_rf = sum(true_class_xval_test == pred)/length(pred)
+  true_class_xval_test_rf = factor(M_xval_test$V1, levels(pred_rf))
+  success_xval_rf = sum(true_class_xval_test == pred_rf)/length(pred_rf)
   print(success_xval_rf)
   cat("Success", i, ":", success_xval_rf, "\t")
   prenorm_res_rf[i] = success_xval
   
 }
+#aa
 
 hist(prenorm_res, xlim = c(.35, .5), main = 'Cross Validation', xlab = 'Accuracy')
 abline(v = mean(prenorm_res),

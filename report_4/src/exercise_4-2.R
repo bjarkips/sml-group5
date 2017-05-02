@@ -33,11 +33,23 @@ for (i in 1:10) {
   
   class_xval = rpart(V1 ~ ., data = M_xval_train, method = "class")
   
-  pred<-predict(r_tree, M_xval_test, type = "class")
+  pred<-predict(class_xval, M_xval_test, type = "class")
   
   true_class_xval_test = factor(M_xval_test$V1, levels(pred))
   success_xval = sum(true_class_xval_test == pred)/length(pred)
   print(success_xval)
   cat("Success", i, ":", success_xval, "\t")
   prenorm_res[i] = success_xval
+  
 }
+
+hist(prenorm_res, xlim = c(.45, .6), main = 'Cross Validation', xlab = 'Accuracy')
+abline(v = mean(prenorm_res),
+       col = "royalblue",
+       lwd = 2)
+abline(v = mean(prenorm_res)+ sd(prenorm_res), col = 'red', lwd = 2)
+abline(v = mean(prenorm_res)- sd(prenorm_res), col = 'red', lwd = 2)
+legend(x = "topright", # location of legend within plot area
+       c("Mean", "Std. Dev."),
+       col = c("royalblue", "red"),
+       lwd = c(2, 2))
