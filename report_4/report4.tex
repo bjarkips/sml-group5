@@ -76,7 +76,15 @@
 \section{Decision Trees}
 In this section we will be working exclusively with decision trees finding optimal decision point, computing and visualizing one and also doing cross validation with the results that we manage to obtain. 
 
-\subsection{•}
+\subsection{Optimal decision point}
+When using decision trees for classification with continuous variables, the common method involves, for each attribute, a threshold which maximizes information gain. Thresholding is a binary operation and thus does not generalize simply to multiclass problems such as this, but one workaround is to train multiple classifiers. Each of these is trained to classify a single class in a one vs. all manner. In computing the following results, we create a classifier for the 1 digit by computing the optimal decision point for each of the first five principal components. The method used for computing the threshold is simple: We sort on the current PC and iterate through the samples, testing each value as a threshold and computing the corresponding information gain.\par
+ Figure \ref{fig:threshold} shows information gain as a function of data matrix row number for each of the five PCs. The thresholds chosen were the maxima of these graphs, 0.1136, 0.0463, 0.0298, 0.0457 and 0.0726 for components 1-5, respectively. Note that some of these gains are greater than those for preceding PCs. This shows the influence of specific PCs on the classification of the 1 digit and varies for other classes.
+ \begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/threshold.png}
+	\caption{Decision Tree of person dependent set.}
+	\label{fig:threshold}
+\end{figure}
 
 \subsection{Compute Decision Tree}
 
@@ -89,7 +97,7 @@ In this section we will be working exclusively with decision trees finding optim
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/confusionMatrix.png}
+	\includegraphics[width=0.8\textwidth]{figures/confusionMatrix.PNG}
 	\caption{Confusion matrix of test set results and actual classes.}
 	\label{fig:scree}
 \end{figure}
@@ -100,7 +108,7 @@ In the second part of the exercise we used the person dependent data-set and spl
 
 \clearpage
 \subsection{Cross-Validation}
-Now we made cross validation for the dependent set using 10\% as test set and the other 90\% as training and we can see on figure 3 that most of the results are around .42 showing a very consistent trend no matter which test and training sets we are using
+Now we made cross validation for the dependent set using 10\% as test set and the other 90\% as training and we can see on figure 3 that most of the results are around .53 showing a very consistent trend no matter which test and training sets we are using
 
 \begin{figure}[h]
 	\centering
@@ -109,6 +117,11 @@ Now we made cross validation for the dependent set using 10\% as test set and th
 	\label{fig:scree}
 \end{figure}
 
+
+\clearpage
+\section{Random Forests}
+Random forests are robust classifiers which use the majority vote of multiple decision trees for classification. This method uses bootstrap aggregation to circumvent the overfitting inherent to decision trees.\par
+There are two main parameters to tune when constructing a decision tree, namely the total number of trees and their depth. A higher total number of trees tends to reduce overall classification error with diminishing results. In other words, adding trees reduces the error but the error will eventually converge. The tree depth contributes to the classifier's level of overfitting. Deeper trees tend to overfit data so if the data is noisy, then pruning is recommended and often implemented by simply limiting the tree depth. 
 
 \end{document}
 \grid

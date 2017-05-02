@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.20)  2 MAY 2017 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.20)  2 MAY 2017 15:27
 entering extended mode
 **./report4.tex
 (report4.tex
@@ -774,59 +774,69 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 64.
 
-<figures/decisionTree.png, id=1, 648.17157pt x 400.49625pt>
+[1
+
+
+{C:/Users/mikeh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<figures/threshold.png, id=6, 1282.7925pt x 688.5725pt>
+File: figures/threshold.png Graphic file (type png)
+
+<use figures/threshold.png>
+Package pdftex.def Info: figures/threshold.png used on input line 84.
+(pdftex.def)             Requested size: 334.60571pt x 179.6025pt.
+
+<figures/decisionTree.png, id=7, 648.17157pt x 400.49625pt>
 File: figures/decisionTree.png Graphic file (type png)
 
 <use figures/decisionTree.png>
-Package pdftex.def Info: figures/decisionTree.png used on input line 85.
+Package pdftex.def Info: figures/decisionTree.png used on input line 93.
 (pdftex.def)             Requested size: 334.60571pt x 206.7498pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/confusionMatrix.png, id=2, 204.765pt x 100.57574pt>
-File: figures/confusionMatrix.png Graphic file (type png)
+<figures/confusionMatrix.PNG, id=8, 204.765pt x 100.57574pt>
+File: figures/confusionMatrix.PNG Graphic file (type png)
 
-<use figures/confusionMatrix.png>
-Package pdftex.def Info: figures/confusionMatrix.png used on input line 92.
+<use figures/confusionMatrix.PNG>
+Package pdftex.def Info: figures/confusionMatrix.PNG used on input line 100.
 (pdftex.def)             Requested size: 334.60571pt x 164.36055pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
-
-
-{C:/Users/mikeh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./figur
-es/decisionTree.png> <./figures/confusionMatrix.png>]
-<figures/crossValidation.png, id=14, 648.17157pt x 400.49625pt>
+[2 <./figures/threshold.png>] [3 <./figures/decisionTree.png> <./figures/confus
+ionMatrix.PNG>]
+<figures/crossValidation.png, id=18, 648.17157pt x 400.49625pt>
 File: figures/crossValidation.png Graphic file (type png)
 
 <use figures/crossValidation.png>
-Package pdftex.def Info: figures/crossValidation.png used on input line 107.
+Package pdftex.def Info: figures/crossValidation.png used on input line 115.
 (pdftex.def)             Requested size: 334.60571pt x 206.7498pt.
- [3
+ [4
 
- <./figures/crossValidation.png>]
+ <./figures/crossValidation.png>] [5
+
+]
 (report4.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8557 strings out of 493333
- 137989 string characters out of 3130143
- 387998 words of memory out of 3000000
- 11927 multiletter control sequences out of 15000+200000
+ 8564 strings out of 493333
+ 138124 string characters out of 3130143
+ 387006 words of memory out of 3000000
+ 11932 multiletter control sequences out of 15000+200000
  68080 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,10n,54p,8841b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,54p,8841b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/put
 r8a.pfb>
-Output written on report4.pdf (3 pages, 41934 bytes).
+Output written on report4.pdf (5 pages, 110580 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.20)  4 APR 2017 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.20)  4 APR 2017 10:27
 entering extended mode
 **./report3.tex
 (report3.tex
@@ -829,57 +829,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<../../dendrogram.png, id=11, 680.5425pt x 390.70969pt>
-File: ../../dendrogram.png Graphic file (type png)
-
-<use ../../dendrogram.png>
-Package pdftex.def Info: ../../dendrogram.png used on input line 117.
-(pdftex.def)             Requested size: 334.60571pt x 192.09924pt.
-
-<../../clustering.png, id=12, 670.75594pt x 390.70969pt>
+<../../clustering.png, id=11, 670.75594pt x 390.70969pt>
 File: ../../clustering.png Graphic file (type png)
 
 <use ../../clustering.png>
-Package pdftex.def Info: ../../clustering.png used on input line 124.
+Package pdftex.def Info: ../../clustering.png used on input line 117.
 (pdftex.def)             Requested size: 334.60571pt x 194.90126pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../../downsampling.png, id=13, 782.17218pt x 390.70969pt>
+<../../downsampling.png, id=12, 782.17218pt x 390.70969pt>
 File: ../../downsampling.png Graphic file (type png)
 
 <use ../../downsampling.png>
-Package pdftex.def Info: ../../downsampling.png used on input line 131.
+Package pdftex.def Info: ../../downsampling.png used on input line 124.
 (pdftex.def)             Requested size: 334.60571pt x 167.14339pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../../confusionMatrix.png, id=14, 682.34924pt x 252.945pt>
+<../../confusionMatrix.png, id=13, 682.34924pt x 252.945pt>
 File: ../../confusionMatrix.png Graphic file (type png)
 
 <use ../../confusionMatrix.png>
-Package pdftex.def Info: ../../confusionMatrix.png used on input line 137.
+Package pdftex.def Info: ../../confusionMatrix.png used on input line 130.
 (pdftex.def)             Requested size: 334.60571pt x 124.03676pt.
+ [3
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3
-
- <../../dendrogram.png>] [4 <../../clustering.png> <../../downsampling.png> <..
-/../confusionMatrix.png>]
-<../../PRcurve.png, id=26, 581.17125pt x 390.70969pt>
+ <../../clustering.png> <../../downsampling.png>] [4 <../../confusionMatrix.png
+>]
+<../../PRcurve.png, id=24, 581.17125pt x 390.70969pt>
 File: ../../PRcurve.png Graphic file (type png)
  <use ../../PRcurve.png>
-Package pdftex.def Info: ../../PRcurve.png used on input line 190.
+Package pdftex.def Info: ../../PRcurve.png used on input line 183.
 (pdftex.def)             Requested size: 334.60571pt x 224.94844pt.
 
-<../../f1score.png, id=27, 581.17125pt x 390.70969pt>
+<../../f1score.png, id=25, 581.17125pt x 390.70969pt>
 File: ../../f1score.png Graphic file (type png)
  <use ../../f1score.png>
-Package pdftex.def Info: ../../f1score.png used on input line 196.
+Package pdftex.def Info: ../../f1score.png used on input line 189.
 (pdftex.def)             Requested size: 334.60571pt x 224.94844pt.
 
 
@@ -893,19 +876,19 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8594 strings out of 493333
- 138634 string characters out of 3130143
+ 8589 strings out of 493333
+ 138521 string characters out of 3130143
  388983 words of memory out of 3000000
- 11964 multiletter control sequences out of 15000+200000
+ 11960 multiletter control sequences out of 15000+200000
  73568 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,11n,54p,8841b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/mikeh/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/put
 r8a.pfb>
-Output written on report3.pdf (6 pages, 154357 bytes).
+Output written on report3.pdf (6 pages, 144259 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
