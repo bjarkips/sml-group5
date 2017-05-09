@@ -1,0 +1,26 @@
+size=c(5,10,20), maxit = 1000
+accuracy = 42.55%
+
+size=c(10, 20), maxit = 1000
+accuracy = 49.525%
+
+size = c(20, 40)
+accuracy = 48.975%
+
+size = c(10, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+accuracy = 9.8%
+
+size = c(100)
+accuracy = 49.85%
+
+size = c(200)
+accuracy = 49.05%
+
+---------------------------------------
+size = c(100)
+
+LR = .7
+accuracy = 49.35%
+
+LR = .1
+accuracy = 49.525%
