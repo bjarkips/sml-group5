@@ -74,8 +74,8 @@
 %----------------------------------------------------------------------------------------
 
 \section{Neural Networks}
-	For this exercise we use two-person data, reduced to the first 5 PCs and then split 50-50 to person-dependent training and test sets. We experiment with varying hidden layer structure as well as learning rates. We use the RSNNS package with \texttt{Std_Backpropagation} learning and a maximum of 1000 iterations throughout. For classification, we choose the output with the highest value in a winner-takes-all manner.\par
-	We train a neural network using the package's \texttt{mlp} function and plot it using a custom function from \footnote{\url{https://gist.githubusercontent.com/fawda123/7471137/raw/466c1474d0a505ff044412703516c34f1a4684a5/nnet_plot_update.r}}. The resulting network is shown in figure \ref{fig:nn}. We also plot its error for each iteration as shown in figure \ref{fig:iterr}. We see that this error converges with time as the network reaches a local minimum error.
+	For this exercise we use two-person data, reduced to the first 5 PCs and then split 50-50 to person-dependent training and test sets. We experiment with varying hidden layer structure as well as learning rates. We use the RSNNS package with \texttt{Std\_Backpropagation} learning and a maximum of 1000 iterations throughout. For classification, we choose the output with the highest value in a winner-takes-all manner.\par
+	We train a neural network using the package's \texttt{mlp} function and plot it using a custom function from \footnote{https://gist.githubusercontent.com/fawda123/7471137/raw/466c1474d0a505ff044412703516c34f1a4684a5/nnet\_plot\_update.r}. The resulting network is shown in figure \ref{fig:nn}. We also plot its error for each iteration as shown in figure \ref{fig:iterr}. We see that this error converges with time as the network reaches a local minimum error.
 
 	\begin{figure}[h]
 		\centering
@@ -87,7 +87,7 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{iterr.png}
-		\caption{Neural network with hidden layer sizes c(5, 10, 20).}
+		\caption{Error rate vs. iteration number.}
 		\label{fig:iterr}
 	\end{figure}
 
